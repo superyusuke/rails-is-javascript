@@ -21,6 +21,8 @@ class HelloController < ApplicationController
   end
 
   def about
+    name = params[:name]
+    @name = name
   end
 end
 
