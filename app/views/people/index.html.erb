@@ -1,10 +1,14 @@
 <h1>People#index</h1>
+<a href="/people/add">add page</a>
 <p>Find me in app/views/people/index.html.erb</p>
 <div>
   <% @person.each do |o| %>
     <h2>
-      <%= o.name %>
-      <%= o.mail %>
+      <a href="/people/<%= o.id %>">
+        <%= o.name %>
+        <%= o.mail %>
+        ID: <%= o.id %>
+      </a>
     </h2>
   <% end %>
 </div>

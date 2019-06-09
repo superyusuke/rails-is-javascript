@@ -6,4 +6,7 @@ Rails.application.routes.draw do
   get 'hello' , to: 'hello#index'
   get 'hello/about', to: 'hello#about'
   get 'people', to: 'people#index'
+  get 'people/add', to: 'people#add'
+  post 'people/add', to: 'people#add'
+  get 'people/:id', to: 'people#show'
 end
